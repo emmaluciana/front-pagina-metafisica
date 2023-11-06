@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <title>MetaFisica</title>
+</head>
+<body>
+  <header>
+    <h1>MetaFísica </h1>
+    <nav>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="metaFisica.html">Qué es la MetaFísica?</a></li>
+      <li><a href="secciones.html">Secciones</a></li>
+      <li><a class="active" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header> 
+
+  <div class="conteiner-formulario">
+    <form action="">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Escribí acá tu nombre" required minlength="3" maxlength="30"> <hr>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Escribí acá tu apellido" required minlength="3" maxlength="30"> <hr>
+      <label for="mail">Email:</label>
+      <input type="email" id="mail" name="mail" placeholder="Escribí acá tu email" required> <hr>
+
+      <label for="pais">País:</label>
+      <select name="pais" id="pais">
+        <option value="Argentina">Argentina</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Chile">Chile</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Perú">Perú</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Colombia">Colombia</option>
+        <option value="EE.UU">EE.UU</option>
+      </select> <hr>
+
+      <label for="comentario">Comentario:</label>
+      <textarea name="comentario" id="comentario" placeholder="Escribí acá tu comentario" ></textarea> <hr>
+
+      <label for="motivo">Motivo de contacto</label>
+      <input type="radio" id="motivo" name="motivo"><i>Quiero aportar</i>
+      <input type="radio" id="motivo" name="motivo"><i>Quiero saber más</i>
+      <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>Derechos reservados &copy; 2023</p>
+  </footer>
+    
+</body>
